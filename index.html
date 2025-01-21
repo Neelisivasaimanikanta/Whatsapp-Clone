@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Clone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Sidebar (Contacts) -->
+  <div id="sidebar">
+    <div id="search">
+      <input type="text" placeholder="Search or start a new chat" id="search-input">
+    </div>
+    <div id="contacts">
+      <div class="contact" onclick="openChat('Manikanta')">
+        <img src="manikanta.jpg" alt="Manikanta">
+        <div>
+          <h3>Manikanta</h3>
+          <p>Hey, how are you?</p>
+        </div>
+      </div>
+      <div class="contact" onclick="openChat('Vijaya')">
+        <img src="vijaya.jpg" alt="Vijaya">
+        <div>
+          <h3>Vijaya</h3>
+          <p>Let's catch up soon!</p>
+        </div>
+      </div>
+      <div class="contact" onclick="openChat('Yoganand')">
+        <img src="yoganand.jpg" alt="Yoganand">
+        <div>
+          <h3>Yoganand</h3>
+          <p>Hey, how are ra?</p>
+        </div>
+      </div>
+      <div class="contact" onclick="openChat('Maheshbabu')">
+        <img src="maharshi-indian-movie-poster-md.jpg" alt="Maheshbabu">
+        <div>
+          <h3>Mahesh Babu</h3>
+          <p>Hi sir Whatsup?</p>
+        </div>
+      </div>
+      <div class="contact" onclick="openChat('Spyder Man')">
+        <img src="11990.jpeg" alt="Spyder Man">
+        <div>
+          <h3>SpyderMan</h3>
+          <p>Hey, wanna fly with me?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chat Window -->
+  <div id="chat-window">
+    <div id="chat-header">
+      <h2 id="contact-name">Select a contact</h2>
+      <div id="chat-header-icons">
+        <i class="fas fa-phone-alt"></i>
+        <i class="fas fa-video"></i>
+        <i class="fas fa-ellipsis-h"></i>
+      </div>
+    </div>
+    <div id="messages" class="message-container">
+      <!-- Messages will appear here -->
+    </div>
+    <div id="message-input">
+      <input type="text" placeholder="Type a message" id="message-text">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
